@@ -1,0 +1,55 @@
+.descriptionContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.description {
+  margin-top: 1rem;
+  font-style: italic;
+}
+
+.card {
+  margin: 1rem 0.5rem;
+  cursor: pointer;
+  position: relative;
+
+  &:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s;
+  }
+}
+
+.contactLogo {
+  margin-right: 0.5rem;
+}
+
+.learnMoreText {
+  margin: 1rem;
+  font-size: 20px;
+}
+
+.learnMoreContainer {
+  cursor: pointer;
+  position: relative;
+
+  &:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s;
+  }
+}
+
+.moveUpDown {
+  -webkit-animation: action 0.4s infinite  alternate;
+  animation: action 0.4s infinite  alternate;
+}
+
+@-webkit-keyframes action {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+
+@keyframes action {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
